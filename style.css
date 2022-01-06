@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 #app {
   background: #fff;
   width: 100vw;
@@ -38,6 +42,10 @@ a {
   background-repeat: no-repeat;
   height: 75vh;
   padding: 20px;
+}
+
+.social-media {
+  display: flex;
 }
 
 .showcase h1 {
