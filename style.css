@@ -38,10 +38,11 @@ a {
   padding: 20px;
 }
 
-.showcase h3 {
+.showcase h2 {
   padding-top: 45px;
-  font-size: 30px;
-  width: 200px;
+  font-size: 40px;
+  width: 300px;
+  line-height: 52px;
   font-weight: 700;
   margin-bottom: 10px;
 }
