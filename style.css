@@ -121,11 +121,10 @@ li {
   display: flex;
 }
 
-.work__lang {
+.work__lang * {
   margin: 20px 10px 20px 0;
   background: #ebebff;
   color: #6070ff;
-  line-height: 16px;
   font-weight: 500;
   border-radius: 7px;
   padding: 5px;
@@ -135,4 +134,31 @@ li {
 .lang-2:hover,
 .lang-3:hover {
   text-decoration: underline;
+}
+
+.btn {
+  width: 150px;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  outline: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #6070ff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+  text-decoration: underline;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn-enabled {
+  background-color: #fff;
+  border: 1px solid #7f8cff;
 }
