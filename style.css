@@ -64,7 +64,7 @@ li {
   height: 19.9px;
 }
 
-/*WORKS SECTION START POINT*/
+/*WORKS SECTION STYLES*/
 .works {
   display: grid;
   grid-template-columns: 1fr;
@@ -161,4 +161,68 @@ li {
 .btn-enabled {
   background-color: #fff;
   border: 1px solid #7f8cff;
+}
+
+/*ABOUT ME SESTION STYLES*/
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 327px;
+  height: 1000px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px;
+  margin: 50px auto;
+  border-top-right-radius: 50px;
+}
+
+.about-me__title {
+  width: 200px;
+  height: 101px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin: 20px 0 15px 0;
+}
+
+.about-me-container lu {
+  margin-bottom: 40px;
+}
+
+.about-me-container > a {
+  display: block;
+  width: 160px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.about-me__tools {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.programming-lang {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 66.73px;
+  width: 303px;
+}
+
+.programming-lang img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
 }
