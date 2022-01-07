@@ -17,11 +17,6 @@ li {
   list-style: none;
 }
 
-#app {
-  background: #fff;
-  width: 100vw;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -67,4 +62,77 @@ li {
   margin-right: 10px;
   width: 19.9px;
   height: 19.9px;
+}
+
+/*WORKS SECTION START POINT*/
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 327px;
+  height: 596px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
+.work__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.work__description > h2 {
+  width: 290px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.short_desc {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.short_desc * {
+  margin-right: 10px;
+}
+
+.short_desc h4 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.short_desc h4:nth-child(1) {
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.short_desc span {
+  background-color: #c1c7d0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.work__lang {
+  display: flex;
+}
+
+.work__lang {
+  margin: 20px 10px 20px 0;
+  background: #ebebff;
+  color: #6070ff;
+  line-height: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.lang-1:hover,
+.lang-2:hover,
+.lang-3:hover {
+  text-decoration: underline;
 }
