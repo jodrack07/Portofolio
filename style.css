@@ -207,7 +207,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0;
+  text-transform: capitalize;
 }
 
 .programming-lang {
@@ -226,4 +227,9 @@ li {
   width: 48px;
   height: 48px;
   margin-right: 12px;
+}
+
+.frameworks,
+.skils {
+  border-bottom: 2px solid #dfe1e6;
 }
