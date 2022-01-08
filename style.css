@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-/* #app {
-  max-width: 327px;
-} */
-
 body {
   background: #f5f5f5;
   font-family: Poppins, sans-serif;
@@ -285,11 +281,6 @@ li {
   padding: 10px;
 }
 
-/* .form-group {
-  display: flex;
-  flex-direction: column;
-} */
-
 .form-control::placeholder {
   font-size: 20px;
 }
@@ -310,15 +301,3 @@ li {
   border-radius: 30px;
   margin: 20px auto 0 auto;
 }
-
-/* .contact-form__details button {
-  margin-bottom: 60px;
-} */
-
-/* .contact-form__details .swip_icon {
-  display: block;
-  background: black;
-  width: 100px;
-  text-align: center;
-  margin: 0 auto;
-} */
