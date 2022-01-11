@@ -69,8 +69,7 @@ li {
 .works {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  width: 100%;
+  width: 327px;
   height: 596px;
   padding: 16px;
   background: #fff;
@@ -130,6 +129,7 @@ li {
   font-weight: 500;
   border-radius: 7px;
   padding: 5px;
+  /* float: left; */
 }
 
 .lang-1:hover,
