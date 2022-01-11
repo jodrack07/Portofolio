@@ -5,6 +5,13 @@
 > Setting up a mobile version skeleton of a Portofolio website with a refernce to a figma UI
 
 ![screenshot](./app_screenshot.png)
+![screenshot](/img/project_screenshot/screenshot1.png)
+![screenshot](/img/project_screenshot/screenshot2.png)
+![screenshot](/img/project_screenshot/screenshot3.png)
+![screenshot](/img/project_screenshot/screenshot4.png)
+![screenshot](/img/project_screenshot/screenshot5.png)
+![screenshot](/img/project_screenshot/screenshot6.png)
+![screenshot](/img/project_screenshot/screenshot8.png)
 
 ## Built With
 
