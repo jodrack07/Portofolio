@@ -304,13 +304,19 @@
         </div>
 
         <div class="contact-form__details">
-          <form action="#" class="form-group">
+          <form
+            action="https://formspree.io/f/mrgjbnol"
+            method="post"
+            class="form-group"
+          >
             <input
               type="text"
               name="name"
               class="form-control"
               id="name"
+              size="30"
               placeholder="Joseph"
+              required
             />
             <input
               type="email"
@@ -318,6 +324,7 @@
               class="form-control"
               id="email"
               placeholder="drack.sir01@gmail.com"
+              required
             />
             <textarea
               name="message"
@@ -325,7 +332,9 @@
               id="message"
               cols="30"
               rows="10"
+              maxlength="500"
               placeholder="Write your message here"
+              required
             ></textarea>
             <button class="btn btn-enabled" type="button">Get It Touch</button>
             <span class="swipe-icon"></span>
