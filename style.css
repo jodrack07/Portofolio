@@ -9,8 +9,16 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.header {
+  background: #fff;
+}
+
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
@@ -21,8 +29,11 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
   padding: 20px;
+}
+
+.menu__links {
+  display: none;
 }
 
 .menu h2 {
@@ -30,12 +41,13 @@ li {
 }
 
 .showcase {
-  display: flex;
-  flex-direction: column;
   background-image: url("./img/header-shapes-mobile.png");
   background-size: cover;
+  background-color: #fff;
   background-repeat: no-repeat;
-  height: 75vh;
+  border-bottom-left-radius: 50px;
+  min-height: 75vh;
+  margin-top: -2px;
   padding: 20px;
 }
 
@@ -70,11 +82,15 @@ li {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 327px;
-  height: 596px;
   padding: 16px;
   background: #fff;
   border-radius: 8px;
   margin: 50px auto;
+}
+
+.works__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .work__description {
@@ -129,12 +145,11 @@ li {
   font-weight: 500;
   border-radius: 7px;
   padding: 5px;
-  /* float: left; */
 }
 
 .lang-1:hover,
-.lang-2:hover,
-.lang-3:hover {
+.lang-3:hover,
+.lang-4:hover {
   text-decoration: underline;
 }
 
@@ -155,7 +170,7 @@ li {
   text-decoration: underline;
 }
 
-.btn:active {
+.btn-active {
   color: #fff;
   background-color: #2230d2;
 }
@@ -208,25 +223,26 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
   text-transform: capitalize;
 }
 
 .programming-lang {
   display: flex;
-  align-items: center;
   background-color: #f7f7f9;
   border-radius: 8px;
   padding: 12px;
-  margin-bottom: 10px;
   margin-top: 10px;
   height: 66.73px;
   width: 303px;
 }
 
+.programming-lang a {
+  color: #253858;
+}
+
 .programming-lang img {
-  width: 48px;
-  height: 48px;
+  width: 18px;
+  height: 18px;
   margin-right: 12px;
 }
 
@@ -308,4 +324,143 @@ li {
   display: block;
   border-radius: 30px;
   margin: 20px auto 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 992px) {
+  .header {
+    padding: 0 32px;
+  }
+
+  .menu .humbeger {
+    display: none;
+  }
+
+  .menu__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__links-item {
+    margin-right: 25px;
+  }
+
+  .showcase {
+    background-image: url("./img/header-shapes-desktop.png");
+    border-bottom-left-radius: 110px;
+    height: 85vh;
+    padding-top: 100px;
+  }
+
+  .showcase__presentation {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .works {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    height: 460px;
+    margin: 70px auto;
+  }
+
+  .works-col-2-1 {
+    display: flex;
+    width: 70%;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 50px auto;
+  }
+
+  .works-col-2-1 .work__description {
+    order: -1;
+  }
+
+  .works__image {
+    margin-right: 30px;
+  }
+
+  .work__description > h2 {
+    margin-top: 30px;
+    width: 400px;
+  }
+
+  .short_desc {
+    margin-bottom: 30px;
+  }
+
+  .about-me {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 20px 150px;
+    height: 500px;
+  }
+
+  .about-me-container {
+    margin-right: 10px;
+  }
+
+  .programming-lang-container {
+    display: flex;
+    width: 100px;
+    margin-bottom: -50px;
+  }
+
+  .programming-lang {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 76px;
+  }
+
+  .frameworks,
+  .skils {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  .programming-lang img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prog-languages h3 {
+    margin-bottom: 1px;
+  }
+
+  .about-me__tools {
+    margin-bottom: 0;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/contact-form-desk-bg.png");
+  }
+
+  .contact-form__intro p {
+    width: 500px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swipe-icon {
+    display: none;
+  }
+
+  .frameworks,
+  .skils {
+    margin-bottom: 1px;
+  }
 }
