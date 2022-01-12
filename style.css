@@ -328,7 +328,7 @@ li {
 
 .swipe-icon {
   background-color: #0d151e;
-  width: 160px;
+  width: 161px;
   height: 5px;
   display: block;
   border-radius: 30px;
@@ -382,7 +382,6 @@ li {
     display: flex;
     flex-direction: row;
     width: 70%;
-    /* padding: 16px; */
     background: #fff;
     border-radius: 8px;
     margin: 50px auto;
