@@ -381,7 +381,7 @@ li {
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
     margin: 70px auto;
-    height: 430px;
+    height: 440px;
   }
 
   .works-col-2-1 {
@@ -391,7 +391,7 @@ li {
     background: #fff;
     border-radius: 8px;
     margin: 50px auto;
-    height: 430px;
+    height: 440px;
   }
 
   .works-col-2-1 .work__description {
