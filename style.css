@@ -25,6 +25,10 @@ li {
   list-style: none;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -45,10 +49,10 @@ li {
   background-size: cover;
   background-color: #fff;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 50px;
-  min-height: 75vh;
-  margin-top: -2px;
+  border-bottom-left-radius: 80px;
   padding: 20px;
+  height: 75vh;
+  width: 100vw;
 }
 
 .social-media {
@@ -82,6 +86,7 @@ li {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 327px;
+  height: 600px;
   padding: 16px;
   background: #fff;
   border-radius: 8px;
@@ -195,7 +200,7 @@ li {
 .about-me {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  width: 327px;
+  width: 100%;
   height: 1000px;
   padding: 16px;
   background: #fff;
@@ -358,8 +363,8 @@ li {
   .showcase {
     background-image: url("./img/header-shapes-desktop.png");
     border-bottom-left-radius: 110px;
-    height: 85vh;
-    padding-top: 100px;
+    height: 99vh;
+    padding: 150px;
   }
 
   .showcase__presentation {
@@ -376,6 +381,7 @@ li {
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
     margin: 70px auto;
+    height: 430px;
   }
 
   .works-col-2-1 {
@@ -385,6 +391,7 @@ li {
     background: #fff;
     border-radius: 8px;
     margin: 50px auto;
+    height: 430px;
   }
 
   .works-col-2-1 .work__description {
@@ -421,7 +428,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5px;
+    padding: 10px;
     margin-top: 5px;
     margin-right: 10px;
     height: 76px;
@@ -459,6 +466,10 @@ li {
     align-items: center;
   }
 
+  .form-control {
+    width: 400px;
+  }
+
   .swipe-icon {
     display: none;
   }
@@ -478,7 +489,11 @@ li {
   }
 
   .works img,
-  .works-col-2-1 {
+  .works-col-2-1 img {
+    width: 544px;
+    height: 400px;
     object-fit: cover;
+    display: block;
+    position: relative;
   }
 }
