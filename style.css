@@ -88,6 +88,16 @@ li {
   margin: 50px auto;
 }
 
+.works-col-2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
 .works__image img {
   width: 100%;
   height: 100%;
@@ -232,7 +242,6 @@ li {
   border-radius: 8px;
   padding: 12px;
   margin-top: 10px;
-  height: 66.73px;
   width: 303px;
 }
 
@@ -367,6 +376,7 @@ li {
 
   .works-col-2-1 {
     display: flex;
+    flex-direction: row;
     width: 70%;
     padding: 16px;
     background: #fff;
@@ -396,16 +406,12 @@ li {
     width: 100%;
     padding: 20px 150px;
     height: 500px;
-  }
-
-  .about-me-container {
-    margin-right: 10px;
+    border-top-right-radius: 100px;
   }
 
   .programming-lang-container {
     display: flex;
     width: 100px;
-    margin-bottom: -50px;
   }
 
   .programming-lang {
@@ -416,13 +422,6 @@ li {
     margin-top: 5px;
     margin-right: 10px;
     height: 76px;
-  }
-
-  .frameworks,
-  .skils {
-    display: flex;
-    align-items: center;
-    margin-top: -50px;
   }
 
   .programming-lang img {
@@ -442,6 +441,7 @@ li {
     display: flex;
     flex-direction: column;
     background-image: url("/img/contact-form-desk-bg.png");
+    border-top-left-radius: 100px;
   }
 
   .contact-form__intro p {
@@ -459,8 +459,17 @@ li {
     display: none;
   }
 
+  .about-me-container {
+    margin-right: 20px;
+    padding: 20px;
+  }
+
   .frameworks,
   .skils {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
     margin-bottom: 1px;
+    height: 50px;
   }
 }
