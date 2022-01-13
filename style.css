@@ -402,6 +402,10 @@ li {
     margin-right: 30px;
   }
 
+  .works__image:hover {
+    transform: scale(1.1);
+  }
+
   .work__description > h2 {
     margin-top: 30px;
     width: 400px;
