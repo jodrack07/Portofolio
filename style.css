@@ -36,12 +36,12 @@ li {
   padding: 20px;
 }
 
-.menu h2 {
+.logo {
   color: #6070ff;
   font-weight: 700;
 }
 
-.menu h2:hover {
+.logo:hover {
   animation-name: menu-logo-animation;
   animation-duration: 2s;
 }
@@ -411,9 +411,11 @@ li {
       width: 1000px;
       color: rgba(0, 0, 0, 0.5);
     }
+
     50% {
       width: 500px;
     }
+
     to {
       width: 400px;
       color: #000;
@@ -550,7 +552,5 @@ li {
   .github:hover,
   .angellist:hover {
     transform: skew(15deg);
-    filter: invert(50%) sepia(51%) saturate(200%) hue-rotate(346deg)
-      brightness(50%) contrast(50%);
   }
 }
