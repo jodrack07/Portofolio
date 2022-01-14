@@ -360,6 +360,30 @@ li {
   margin: 20px auto 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .works {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 500px;
+    height: 720px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 50px auto;
+  }
+
+  .works-col-2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 720px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 50px auto;
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 992px) {
