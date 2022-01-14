@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f5f5f5;
   font-family: Poppins, sans-serif;
@@ -15,10 +19,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 li {
@@ -36,12 +36,32 @@ li {
   padding: 20px;
 }
 
-.menu__links {
-  display: none;
+.logo {
+  color: #6070ff;
+  font-weight: 700;
 }
 
-.menu h2 {
-  color: #6070ff;
+.logo:hover {
+  animation-name: menu-logo-animation;
+  animation-duration: 2s;
+}
+
+@keyframes menu-logo-animation {
+  from {
+    color: rgba(96, 112, 255, 0.5);
+  }
+
+  50% {
+    color: #f5f5f5;
+  }
+
+  to {
+    color: rgb(96, 112, 255);
+  }
+}
+
+.menu__links {
+  display: none;
 }
 
 .showcase {
@@ -182,7 +202,7 @@ li {
 .btn:hover {
   color: #fff;
   background-color: #6070ff;
-  text-decoration: underline;
+  transform: rotate(1deg);
 }
 
 .btn-active {
@@ -360,6 +380,14 @@ li {
     margin-right: 25px;
   }
 
+  .menu__links-item a {
+    color: #6070ff;
+  }
+
+  .menu__links-item a:hover {
+    text-decoration: underline;
+  }
+
   .showcase {
     background-image: url("./img/header-shapes-desktop.png");
     border-bottom-left-radius: 110px;
@@ -375,6 +403,23 @@ li {
   .showcase__presentation h1 {
     width: 400px;
     margin-top: 20px;
+    animation: heading-animation 3s linear;
+  }
+
+  @keyframes heading-animation {
+    from {
+      width: 1000px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+      width: 500px;
+    }
+
+    to {
+      width: 400px;
+      color: #000;
+    }
   }
 
   .works {
@@ -400,6 +445,10 @@ li {
 
   .works__image {
     margin-right: 30px;
+  }
+
+  .works__image:hover {
+    transform: scale(1.05);
   }
 
   .work__description > h2 {
@@ -495,5 +544,13 @@ li {
     object-fit: cover;
     display: block;
     position: relative;
+  }
+
+  .twitter:hover,
+  .linkedin:hover,
+  .meduim:hover,
+  .github:hover,
+  .angellist:hover {
+    transform: skew(15deg);
   }
 }
