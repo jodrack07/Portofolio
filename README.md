@@ -18,6 +18,9 @@
 - HTML and CSS
 - npm, npx,Linters
 
+## Live Domo
+[Live demo](https://joseph07-drack.github.io/Portofolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
