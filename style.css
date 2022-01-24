@@ -34,6 +34,19 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: relative;
+}
+
+.menu__links.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  margin: 0 20px;
+  background: #6070ff;
+  height: 100vh;
 }
 
 .bar {
