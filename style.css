@@ -35,6 +35,7 @@ li {
   align-items: center;
   padding: 20px;
   position: relative;
+  width: 100vw;
 }
 
 .menu__links.active {
@@ -42,7 +43,11 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  opacity: 0.9;
+  left: -20px;
+  top: 10px;
+  color: #fff;
   width: 100vw;
   margin: 0 20px;
   background: #6070ff;
