@@ -1,29 +1,27 @@
-const hamburger = document.querySelector('.hamburger');
+const mainMenu = document.querySelector('.mainMenu');
+const openMenu = document.querySelector('.openMenu');
+const closeMenu = document.querySelector('.closeMenu');
 
-const menuLinks = document.querySelector('.menu__links');
+openMenu.addEventListener('click', () => {
+  mainMenu.style.display = 'flex';
+  mainMenu.style.top = '0';
+  document.querySelector('.main').classList.add('blur');
+  document.querySelector('.logo').classList.add('blur');
+  openMenu.classList.add('blur');
+})
 
-// adding the class active when clicking to the hambuger and menuLinks elements
+closeMenu.addEventListener('click', () => {
+  mainMenu.style.top = '-100%';
+  document.querySelector('.main').classList.remove('blur');
+  document.querySelector('.logo').classList.remove('blur');
+  openMenu.classList.remove('blur')
+})
 
-hamburger.addEventListener('click', () => {
-  document.querySelectorAll('.bar').forEach((bar) => {
-    if (bar.style.backgroundColor === 'white') {
-      bar.style.backgroundColor = '#6070ff';
-    } else {
-      bar.style.backgroundColor = 'white';
-    }
-  });
-
-  hamburger.classList.toggle('active');
-  menuLinks.classList.toggle('active');
-  document.querySelector('.main').classList.toggle('blur');
-});
-
-// removing the class when clicking to the menu__links-item element
-
-document.querySelectorAll('.links').forEach((link) => {
+document.querySelectorAll('.links').forEach(link => {
   link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    menuLinks.classList.remove('active');
-    document.querySelector('.main').classList.toggle('blur');
-  });
-});
+  mainMenu.style.display = 'none';
+  document.querySelector('.main').classList.remove('blur');
+  document.querySelector('.logo').classList.remove('blur');
+  openMenu.classList.remove('blur')
+  })
+})
