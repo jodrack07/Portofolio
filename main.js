@@ -8,20 +8,20 @@ openMenu.addEventListener('click', () => {
   document.querySelector('.main').classList.add('blur');
   document.querySelector('.logo').classList.add('blur');
   openMenu.classList.add('blur');
-})
+});
 
 closeMenu.addEventListener('click', () => {
   mainMenu.style.top = '-100%';
   document.querySelector('.main').classList.remove('blur');
   document.querySelector('.logo').classList.remove('blur');
-  openMenu.classList.remove('blur')
-})
+  openMenu.classList.remove('blur');
+});
 
-document.querySelectorAll('.links').forEach(link => {
+document.querySelectorAll('.links').forEach((link) => {
   link.addEventListener('click', () => {
-  mainMenu.style.display = 'none';
-  document.querySelector('.main').classList.remove('blur');
-  document.querySelector('.logo').classList.remove('blur');
-  openMenu.classList.remove('blur')
-  })
-})
+    mainMenu.style.display = 'none';
+    document.querySelector('.main').classList.remove('blur');
+    document.querySelector('.logo').classList.remove('blur');
+    openMenu.classList.remove('blur');
+  });
+});

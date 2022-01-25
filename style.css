@@ -44,11 +44,10 @@ nav .mainMenu {
   top: 0;
   right: 0;
   left: 0;
-  padding-top: 20px;
   z-index: 2;
   transition: top 1s ease;
   background-color: #6070ff;
-  opacity: .9;
+  opacity: 0.9;
   padding-top: 40px;
 }
 
@@ -83,9 +82,6 @@ nav .logo {
   cursor: pointer;
   margin: 6px;
   font-size: 18px;
-}
-
-.logo {
   color: #6070ff;
   font-weight: 700;
 }
@@ -128,7 +124,7 @@ nav .logo {
   text-transform: uppercase;
 }
 
-.social-media a {
+.showcase__presentation .social-media a {
   margin-right: 10px;
   width: 19.9px;
   height: 19.9px;
@@ -272,11 +268,21 @@ nav .logo {
   margin: 20px 0 15px 0;
 }
 
-.about-me-container ul {
+.about-me__tools .programming-lang a {
+  color: #253858;
+}
+
+.about-me__tools .programming-lang img {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+#about .about-me-container ul {
   margin-bottom: 40px;
 }
 
-.about-me-container > a {
+#about .about-me-container > a {
   display: block;
   width: 160px;
   margin-top: 15px;
@@ -302,16 +308,6 @@ nav .logo {
   padding: 12px;
   margin-top: 10px;
   width: 303px;
-}
-
-.programming-lang a {
-  color: #253858;
-}
-
-.programming-lang img {
-  width: 18px;
-  height: 18px;
-  margin-right: 12px;
 }
 
 .frameworks,
@@ -430,10 +426,10 @@ nav .logo {
     display: flex;
     flex-direction: row;
     height: auto;
-    padding-top: 0px;
+    padding-top: 0;
     background-color: #fff;
   }
-  
+
   nav .mainMenu li a {
     color: #344563;
     font-size: 1rem;
