@@ -15,6 +15,7 @@ body {
 
 .header {
   background: #fff;
+  position: relative;
 }
 
 a {
@@ -26,7 +27,7 @@ li {
   list-style: none;
 }
 
-#app {
+.app {
   overflow-x: hidden;
 }
 
@@ -37,24 +38,27 @@ li {
   padding: 20px;
   position: relative;
   width: 100vw;
+  z-index: 1;
 }
 
 .menu__links.active {
   display: flex;
   flex-direction: column;
   position: fixed;
-  opacity: 0.9;
-  left: 1px;
+  opacity: 0.95;
+  left: -1px;
   font-weight: 600;
   font-size: 32px;
   padding-top: 12%;
   padding-left: 3%;
-  top: 1px;
-  width: 100vw;
-
-  /* margin: 0 20px; */
+  top: -1px;
+  width: 100%;
   background: #6070ff;
   height: 100vh;
+}
+
+.menu__links.active li {
+  margin-bottom: 10px;
 }
 
 .bar {
@@ -66,20 +70,18 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-.mnenu.active {
-  display: flex;
-}
-
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
+  color: #fff;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
+  color: #fff;
 }
 
 .logo {
@@ -108,6 +110,14 @@ li {
 
 .menu__links {
   display: none;
+}
+
+.main {
+  filter: none;
+}
+
+.blur {
+  filter: blur(2px);
 }
 
 .showcase {
