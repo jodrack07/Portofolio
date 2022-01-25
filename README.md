@@ -42,10 +42,12 @@ To get a local copy up and running follow these simple example steps.
 
 # Author
 
-👤 **Buingo Joseph(JoDrack)**
+👤 **Buingo Joseph(JoDrack)**, **Thermiee Jolus**
 
 - GitHub: [@joseph07-drack](https://github.com/joseph07-drack)
 - LinkedIn: [Buingo Joseph(JoDrack)](https://www.linkedin.com/in/joseph-buingo-ab2682225/)
+
+- GitHub: [Thermiee Jolus](https://github.com/Thermiee)
 
 ## 🤝 Contributing
 
