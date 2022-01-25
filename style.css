@@ -13,64 +13,85 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.header {
-  background: #fff;
-}
-
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
   list-style: none;
 }
 
-#app {
+.app {
   overflow-x: hidden;
 }
 
-.menu {
+.header {
+  background: #fff;
+  position: relative;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
 
-.bar {
-  display: block;
-  width: 30px;
-  height: 5px;
+nav .mainMenu {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: top 1s ease;
   background-color: #6070ff;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+  opacity: 0.9;
+  padding-top: 40px;
 }
 
-.logo {
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+nav .openMenu {
+  display: block;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #6070ff;
+  margin-right: 5px;
+}
+
+nav .mainMenu .closeMenu {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav .logo {
+  cursor: pointer;
+  margin: 6px;
+  font-size: 18px;
   color: #6070ff;
   font-weight: 700;
 }
 
-.logo:hover {
-  animation-name: menu-logo-animation;
-  animation-duration: 2s;
+.main {
+  filter: none;
 }
 
-@keyframes menu-logo-animation {
-  from {
-    color: rgba(96, 112, 255, 0.5);
-  }
-
-  50% {
-    color: #f5f5f5;
-  }
-
-  to {
-    color: rgb(96, 112, 255);
-  }
-}
-
-.menu__links {
-  display: none;
+.blur {
+  filter: blur(4.5px);
 }
 
 .showcase {
@@ -103,7 +124,7 @@ li {
   text-transform: uppercase;
 }
 
-.social-media a {
+.showcase__presentation .social-media a {
   margin-right: 10px;
   width: 19.9px;
   height: 19.9px;
@@ -247,11 +268,21 @@ li {
   margin: 20px 0 15px 0;
 }
 
-.about-me-container ul {
+.about-me__tools .programming-lang a {
+  color: #253858;
+}
+
+.about-me__tools .programming-lang img {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+#about .about-me-container ul {
   margin-bottom: 40px;
 }
 
-.about-me-container > a {
+#about .about-me-container > a {
   display: block;
   width: 160px;
   margin-top: 15px;
@@ -277,16 +308,6 @@ li {
   padding: 12px;
   margin-top: 10px;
   width: 303px;
-}
-
-.programming-lang a {
-  color: #253858;
-}
-
-.programming-lang img {
-  width: 18px;
-  height: 18px;
-  margin-right: 12px;
 }
 
 .frameworks,
@@ -400,25 +421,27 @@ li {
     padding: 0 32px;
   }
 
-  .menu .hamburger {
+  nav .mainMenu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding-top: 0;
+    background-color: #fff;
+  }
+
+  nav .mainMenu li a {
+    color: #344563;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  nav .openMenu {
     display: none;
   }
 
-  .menu__links {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu__links-item {
-    margin-right: 25px;
-  }
-
-  .menu__links-item a {
-    color: #6070ff;
-  }
-
-  .menu__links-item a:hover {
-    text-decoration: underline;
+  nav .mainMenu .closeMenu {
+    display: none;
   }
 
   .showcase {
