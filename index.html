@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,24 +31,25 @@
   <body>
     <div class="app">
       <header class="header">
-        <nav class="menu">
-          <a href="#"><h2 class="logo">My Logo</h2></a>
-          <ul class="menu__links">
-            <li class="menu__links-item">
-              <a href="#portfolio" class="links">Portofolio</a>
-            </li>
-            <li class="menu__links-item">
+        <nav class="navbar">
+          <div class="logo"><h1>My Logo</h1></div>
+          <div class="openMenu">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul class="mainMenu">
+            <li>
               <a href="#about" class="links">About</a>
             </li>
-            <li class="menu__links-item">
+            <li>
+              <a href="#portfolio" class="links">Portfolio</a>
+            </li>
+            <li>
               <a href="#contact" class="links">Contact</a>
             </li>
+            <div class="closeMenu">
+              <i class="fa fa-times"></i>
+            </div>
           </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
         </nav>
       </header>
 
