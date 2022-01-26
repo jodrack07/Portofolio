@@ -9,7 +9,7 @@
 ## Mobile Menu
 
 ![screenshot](/img/project_screenshot/mobile-menu.png)
-![screenshot](/img/popup-window-mobile.png)
+![screenshot](/img/project_screenshot/popup-window-mobile.png)
 
 ## Built With
 
