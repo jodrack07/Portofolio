@@ -5,22 +5,17 @@
 > Moving from Setting up a mobile version skeleton to a desktop version skeleton version of a Portofolio website with a refernce to a figma UI
 
 ![screenshot](./app_screenshot.png)
-![screenshot](/img/project_screenshot/deskotp-1.png)
-![screenshot](/img/project_screenshot/deskotp-2.png)
-![screenshot](/img/project_screenshot/deskotp-3.png)
-![screenshot](/img/project_screenshot/deskotp-4.png)
-![screenshot](/img/project_screenshot/deskotp-5.png)
-![screenshot](/img/project_screenshot/deskotp-6.png)
-![screenshot](/img/project_screenshot/deskotp-7.png)
 
 ## Mobile Menu
 
 ![screenshot](/img/project_screenshot/mobile-menu.png)
+![screenshot](/img/project_screenshot/popup-window-mobile.png)
 
 ## Built With
 
 - HTML and CSS
 - npm, npx,Linters
+- Javascript
 
 ## Live Domo
 
