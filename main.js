@@ -27,17 +27,14 @@ document.querySelectorAll('.links').forEach((link) => {
 });
 
 // Popup windows for Projects viewing
-const modelContainer = document.querySelector('.modelContainer')
-const project = document.querySelector('.name')
-const description = document.querySelector('.description')
-const company = document.querySelector('.company')
-const role = document.querySelector('.role')
-const year = document.querySelector('.year')
-const imageLink = document.querySelector('.image')
-const langs = document.querySelector('.project__lang')
-const links = document.querySelector('.see-project-buttons')
-const modalContainer = document.querySelector('.modelContainer')
-const work__sections = document.querySelector('.work__sections');
+const modelContainer = document.querySelector('.modelContainer');
+const project = document.querySelector('.name');
+const company = document.querySelector('.company');
+const role = document.querySelector('.role');
+const year = document.querySelector('.year');
+const imageLink = document.querySelector('.image');
+const modalContainer = document.querySelector('.modelContainer');
+const workSections = document.querySelector('.work__sections');
 
 const projectsList = [
   {
@@ -83,19 +80,19 @@ const projectsList = [
     year: '2015',
     sourceLink: 'https://github.com/joseph07-drack/Portofolio/',
     demoLink: 'https://joseph07-drack.github.io/Portofolio/',
-  }
+  },
 ];
 
 // generating content dynamically from the object
-work__sections.innerHTML = ``;
-for(let i = 0; i < projectsList.length; i++) {
-  let languages = ``;
-   projectsList[i].technologies.forEach((language) => {
+workSections.innerHTML = '';
+for (let i = 0; i < projectsList.length; i += 1) {
+  let languages = '';
+  projectsList[i].technologies.forEach((language) => {
     languages += `
       <li><a href='' class='lang1' title='${language}' class='lang-2'>${language}</a></li>
     `;
-  })
-  work__sections.innerHTML += `
+  });
+  workSections.innerHTML += `
       <div class='works'>
           <div class='works__image'>
             <img src='${projectsList[i].imageLink}' alt='work 1' class='img1' />
@@ -121,18 +118,18 @@ for(let i = 0; i < projectsList.length; i++) {
             <button type='button' class='btn btn-enabled project-modal-${i}'>See project</button>
           </div>
     </div>
-  `
+  `;
 }
 
 // showing the popup window once a button get clicked
-for(let i = 0; i < projectsList.length; i++) {
-   document.querySelector(`.project-modal-${i}`).addEventListener('click', (e) => {
-    
-    project.innerHTML = projectsList[i].name
-    imageLink.src = projectsList[i].imageLink
-    role.innerHTML = projectsList[i].role
-    company.innerHTML = projectsList[i].company
-    year.innerHTML = projectsList[i].year
+
+for (let i = 0; i < projectsList.length; i += 1) {
+  document.querySelector(`.project-modal-${i}`).addEventListener('click', () => {
+    project.innerHTML = projectsList[i].name;
+    imageLink.src = projectsList[i].imageLink;
+    role.innerHTML = projectsList[i].role;
+    company.innerHTML = projectsList[i].company;
+    year.innerHTML = projectsList[i].year;
 
     document.querySelector('.work__sections').classList.add('blur');
     document.querySelector('.header').classList.add('blur');
@@ -140,12 +137,11 @@ for(let i = 0; i < projectsList.length; i++) {
     document.querySelector('.contact-form').classList.add('blur');
     document.querySelector('.about-me').classList.add('blur');
     modalContainer.classList.add('show');
-      
-  })
+  });
 }
 document.querySelector('.closeModal').addEventListener('click', () => {
-  modelContainer.style.display = "none";
+  modelContainer.style.display = 'none';
   window.location.reload();
   document.querySelector('.header').classList.remove('blur');
   document.querySelector('.showcase').classList.remove('blur');
-})
+});
