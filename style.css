@@ -341,6 +341,10 @@ nav .logo {
   margin-top: 20px;
 }
 
+.alert.validatonAlert {
+  color: red;
+}
+
 .contact-form h2 {
   color: #fff;
   font-weight: 700;
