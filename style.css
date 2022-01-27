@@ -274,7 +274,7 @@ nav .logo {
 }
 
 .modelContainer img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .about-me__tools .programming-lang img {
@@ -333,7 +333,7 @@ nav .logo {
   background: #fff;
   border-radius: 8px;
   margin: 0 auto;
-  background-image: url("/img/contact-form-hapes.png");
+  background-image: url('./img/contact-form-hapes.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #6070ff;
