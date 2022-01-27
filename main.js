@@ -145,3 +145,17 @@ document.querySelector('.closeModal').addEventListener('click', () => {
   document.querySelector('.header').classList.remove('blur');
   document.querySelector('.showcase').classList.remove('blur');
 });
+
+// Form validation
+const email = document.querySelector('#email');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.form-group');
+
+contactForm.addEventListener('submit', (event) => {
+  const regex = /[A-Z]/;
+  const emailContent = email.value;
+  if (regex.test(emailContent)) {
+    validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
+    event.preventDefault();
+  }
+});

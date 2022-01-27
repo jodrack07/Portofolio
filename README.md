@@ -3,6 +3,7 @@
 # Portofolio website
 
 > Moving from Setting up a mobile version skeleton to a desktop version skeleton version of a Portofolio website with a refernce to a figma UI
+> Adding some form validation tests to force the user to send consitent data
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,6 +11,9 @@
 
 ![screenshot](/img/project_screenshot/mobile-menu.png)
 ![screenshot](/img/project_screenshot/popup-window-mobile.png)
+
+## Form Validation
+![screenshot](/img/project_screenshot/form-validation.png)
 
 ## Built With
 
