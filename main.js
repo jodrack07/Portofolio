@@ -145,3 +145,7 @@ document.querySelector('.closeModal').addEventListener('click', () => {
   document.querySelector('.header').classList.remove('blur');
   document.querySelector('.showcase').classList.remove('blur');
 });
+
+const email = document.querySelector('#email');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.form-group');
