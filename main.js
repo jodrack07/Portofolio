@@ -179,6 +179,6 @@ contactForm.addEventListener('input', () => {
 const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
 
 // displaying information from the local storage
-nameField.value = userDataFromLocalStorage.name;
-emailAddressField.value = userDataFromLocalStorage.emailAddress;
-messageField.value = userDataFromLocalStorage.message;
+nameField.value = userDataFromLocalStorage.name
+emailAddressField.value = userDataFromLocalStorage.emailAddress
+messageField.value = userDataFromLocalStorage.message
