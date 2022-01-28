@@ -132,7 +132,7 @@ for (let i = 0; i < projectsList.length; i += 1) {
 
 // showing the popup window once a button get clicked
 
-for (let i = 0; i < projectsList.length; i += 1) {
+for (let i = 0; i < projectsList; i += 1) {
   document.querySelector(`.project-modal-${i}`).addEventListener('click', () => {
     project.innerHTML = projectsList[i].name;
     imageLink.src = projectsList[i].imageLink;
