@@ -27,7 +27,6 @@ document.querySelectorAll('.links').forEach((link) => {
 });
 
 // Popup windows for Projects viewing
-const modelContainer = document.querySelector('.modelContainer');
 const project = document.querySelector('.name');
 const company = document.querySelector('.company');
 const role = document.querySelector('.role');
@@ -35,6 +34,16 @@ const year = document.querySelector('.year');
 const imageLink = document.querySelector('.image');
 const modalContainer = document.querySelector('.modelContainer');
 const workSections = document.querySelector('.work__sections');
+
+// Form validation
+const email = document.querySelector('#email');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.form-group');
+
+// local storage
+const nameField = document.querySelector('#name');
+const emailAddressField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
 
 const projectsList = [
   {
@@ -140,16 +149,11 @@ for (let i = 0; i < projectsList.length; i += 1) {
   });
 }
 document.querySelector('.closeModal').addEventListener('click', () => {
-  modelContainer.style.display = 'none';
+  modalContainer.style.display = 'none';
   window.location.reload();
   document.querySelector('.header').classList.remove('blur');
   document.querySelector('.showcase').classList.remove('blur');
 });
-
-// Form validation
-const email = document.querySelector('#email');
-const validationAlert = document.querySelector('.alert');
-const contactForm = document.querySelector('.form-group');
 
 contactForm.addEventListener('submit', (event) => {
   const regex = /[A-Z]/;
@@ -159,3 +163,22 @@ contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+contactForm.addEventListener('input', () => {
+  // add information in the local storage
+  const userData = {
+    name: nameField.value,
+    emailAddress: emailAddressField.value,
+    message: messageField.value,
+  };
+
+  // store information in the local storage
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+
+const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+
+// displaying information from the local storage
+nameField.value = userDataFromLocalStorage.name;
+emailAddressField.value = userDataFromLocalStorage.emailAddress;
+messageField.value = userDataFromLocalStorage.message;
